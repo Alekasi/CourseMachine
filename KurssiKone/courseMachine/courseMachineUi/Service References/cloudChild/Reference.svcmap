@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3e93b27d-2f07-43ff-a1c7-cdbe55f6956c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://coursecloudmachine.azurewebsites.net/child/child.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="child.xsd" MetadataType="Schema" ID="464a48a3-cb49-43d9-9c51-bd79b128dc36" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/child/child.svc?xsd=xsd1" />
+    <MetadataFile FileName="child1.xsd" MetadataType="Schema" ID="1eb145d6-d6fe-477a-aea3-615289dcb32b" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/child/child.svc?xsd=xsd3" />
+    <MetadataFile FileName="child.wsdl" MetadataType="Wsdl" ID="63c77646-7f98-4a07-b13a-696c0fcb5bd3" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/child/child.svc?wsdl" />
+    <MetadataFile FileName="child.disco" MetadataType="Disco" ID="478536d6-0e27-465f-8feb-e987e07f6dc1" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/child/child.svc?disco" />
+    <MetadataFile FileName="child2.xsd" MetadataType="Schema" ID="5885a6aa-d90f-4e10-805d-f7c9eb2f86e1" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/child/child.svc?xsd=xsd0" />
+    <MetadataFile FileName="child3.xsd" MetadataType="Schema" ID="8d075696-cd7b-4218-b12f-af3a35a3316a" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/child/child.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

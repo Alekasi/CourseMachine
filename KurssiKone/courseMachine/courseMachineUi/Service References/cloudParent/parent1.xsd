@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/courseBackGround.child" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/courseBackGround.child" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://coursecloudmachine.azurewebsites.net/parent/parent.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://coursecloudmachine.azurewebsites.net/parent/parent.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/courseBackGround.parameter" />
+  <xs:complexType name="ArrayOfchildClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="childClass" nillable="true" type="tns:childClass" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfchildClass" nillable="true" type="tns:ArrayOfchildClass" />
+  <xs:complexType name="childClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="childId" type="ser:guid" />
+      <xs:element minOccurs="0" name="creator" type="ser:guid" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/courseBackGround.parameter" minOccurs="0" name="parameter" nillable="true" type="q1:ArrayOfparameterClass" />
+      <xs:element minOccurs="0" name="parentId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="childClass" nillable="true" type="tns:childClass" />
+</xs:schema>

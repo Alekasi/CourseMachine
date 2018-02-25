@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="courseBackGround.parameter.parameter" CodeBehind="parameter.svc.cs" %>

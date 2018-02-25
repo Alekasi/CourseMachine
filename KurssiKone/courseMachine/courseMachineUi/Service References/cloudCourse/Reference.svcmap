@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="684fba9b-77b2-42ca-94c7-d936c6f156c3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://coursecloudmachine.azurewebsites.net/course/course.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="course.xsd" MetadataType="Schema" ID="5b4b9584-ec35-4e7f-ab04-1aeb77682e3c" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/course/course.svc?xsd=xsd3" />
+    <MetadataFile FileName="course1.xsd" MetadataType="Schema" ID="2b5cb3a3-1ca7-4f2e-a524-83ce5d9c51e7" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/course/course.svc?xsd=xsd2" />
+    <MetadataFile FileName="course.disco" MetadataType="Disco" ID="8fc80258-9d04-4400-bed0-e6cb759eaff8" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/course/course.svc?disco" />
+    <MetadataFile FileName="course.wsdl" MetadataType="Wsdl" ID="713467ea-829d-4ba8-b61e-27acf835d76f" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/course/course.svc?wsdl" />
+    <MetadataFile FileName="course2.xsd" MetadataType="Schema" ID="6d8a6d22-84e6-48f6-a171-d46b89c7f807" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/course/course.svc?xsd=xsd1" />
+    <MetadataFile FileName="course3.xsd" MetadataType="Schema" ID="137af48c-e45c-4cdb-9208-1868709f59a7" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/course/course.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

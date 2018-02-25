@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="permission" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50212/permission/permission.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50212/permission/permission.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50212/permission/permission.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/courseBackGround.permission" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Ipermission_getPermissionString_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPermissionString" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_getPermissionString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPermissionStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_getPermission_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPermission" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_getPermission_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPermissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_createPermissionString_InputMessage">
+    <wsdl:part name="parameters" element="tns:createPermissionString" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_createPermissionString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createPermissionStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_createPermission_InputMessage">
+    <wsdl:part name="parameters" element="tns:createPermission" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_createPermission_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createPermissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_deletePermissionString_InputMessage">
+    <wsdl:part name="parameters" element="tns:deletePermissionString" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_deletePermissionString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deletePermissionStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_deletePermission_InputMessage">
+    <wsdl:part name="parameters" element="tns:deletePermission" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_deletePermission_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deletePermissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_setUserPermissionString_InputMessage">
+    <wsdl:part name="parameters" element="tns:setUserPermissionString" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_setUserPermissionString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setUserPermissionStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_setUserPermission_InputMessage">
+    <wsdl:part name="parameters" element="tns:setUserPermission" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_setUserPermission_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setUserPermissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_deleteUserPermissionString_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteUserPermissionString" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_deleteUserPermissionString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteUserPermissionStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_deleteUserPermission_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteUserPermission" />
+  </wsdl:message>
+  <wsdl:message name="Ipermission_deleteUserPermission_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteUserPermissionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Ipermission">
+    <wsdl:operation name="getPermissionString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ipermission/getPermissionString" message="tns:Ipermission_getPermissionString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ipermission/getPermissionStringResponse" message="tns:Ipermission_getPermissionString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPermission">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ipermission/getPermission" message="tns:Ipermission_getPermission_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ipermission/getPermissionResponse" message="tns:Ipermission_getPermission_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createPermissionString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ipermission/createPermissionString" message="tns:Ipermission_createPermissionString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ipermission/createPermissionStringResponse" message="tns:Ipermission_createPermissionString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createPermission">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ipermission/createPermission" message="tns:Ipermission_createPermission_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ipermission/createPermissionResponse" message="tns:Ipermission_createPermission_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deletePermissionString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ipermission/deletePermissionString" message="tns:Ipermission_deletePermissionString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ipermission/deletePermissionStringResponse" message="tns:Ipermission_deletePermissionString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deletePermission">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ipermission/deletePermission" message="tns:Ipermission_deletePermission_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ipermission/deletePermissionResponse" message="tns:Ipermission_deletePermission_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="setUserPermissionString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ipermission/setUserPermissionString" message="tns:Ipermission_setUserPermissionString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ipermission/setUserPermissionStringResponse" message="tns:Ipermission_setUserPermissionString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="setUserPermission">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ipermission/setUserPermission" message="tns:Ipermission_setUserPermission_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ipermission/setUserPermissionResponse" message="tns:Ipermission_setUserPermission_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteUserPermissionString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ipermission/deleteUserPermissionString" message="tns:Ipermission_deleteUserPermissionString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ipermission/deleteUserPermissionStringResponse" message="tns:Ipermission_deleteUserPermissionString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteUserPermission">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ipermission/deleteUserPermission" message="tns:Ipermission_deleteUserPermission_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ipermission/deleteUserPermissionResponse" message="tns:Ipermission_deleteUserPermission_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_Ipermission" type="tns:Ipermission">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getPermissionString">
+      <soap:operation soapAction="http://tempuri.org/Ipermission/getPermissionString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPermission">
+      <soap:operation soapAction="http://tempuri.org/Ipermission/getPermission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createPermissionString">
+      <soap:operation soapAction="http://tempuri.org/Ipermission/createPermissionString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createPermission">
+      <soap:operation soapAction="http://tempuri.org/Ipermission/createPermission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletePermissionString">
+      <soap:operation soapAction="http://tempuri.org/Ipermission/deletePermissionString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletePermission">
+      <soap:operation soapAction="http://tempuri.org/Ipermission/deletePermission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUserPermissionString">
+      <soap:operation soapAction="http://tempuri.org/Ipermission/setUserPermissionString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUserPermission">
+      <soap:operation soapAction="http://tempuri.org/Ipermission/setUserPermission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUserPermissionString">
+      <soap:operation soapAction="http://tempuri.org/Ipermission/deleteUserPermissionString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUserPermission">
+      <soap:operation soapAction="http://tempuri.org/Ipermission/deleteUserPermission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="permission">
+    <wsdl:port name="BasicHttpBinding_Ipermission" binding="tns:BasicHttpBinding_Ipermission">
+      <soap:address location="http://localhost:50212/permission/permission.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

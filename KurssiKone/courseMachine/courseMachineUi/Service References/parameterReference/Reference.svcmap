@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6ed5b543-e306-484e-8f78-9d6a1badefff" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50212/parameter/parameter.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="parameter.xsd" MetadataType="Schema" ID="0ad3791e-97e0-466f-89a0-1c1d17141a2e" SourceId="1" SourceUrl="http://localhost:50212/parameter/parameter.svc?xsd=xsd0" />
+    <MetadataFile FileName="parameter1.xsd" MetadataType="Schema" ID="a025af70-8e74-4fda-b77d-bc9d39e8332f" SourceId="1" SourceUrl="http://localhost:50212/parameter/parameter.svc?xsd=xsd1" />
+    <MetadataFile FileName="parameter2.xsd" MetadataType="Schema" ID="bd147b81-7590-4583-af92-f189e9865ad7" SourceId="1" SourceUrl="http://localhost:50212/parameter/parameter.svc?xsd=xsd2" />
+    <MetadataFile FileName="parameter.disco" MetadataType="Disco" ID="252c5b11-6e96-40cd-9558-d1efa04f5a2e" SourceId="1" SourceUrl="http://localhost:50212/parameter/parameter.svc?disco" />
+    <MetadataFile FileName="parameter.wsdl" MetadataType="Wsdl" ID="001dcbd3-4ef5-49b5-8060-9be1c732540a" SourceId="1" SourceUrl="http://localhost:50212/parameter/parameter.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

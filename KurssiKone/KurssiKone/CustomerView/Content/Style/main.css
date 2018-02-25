@@ -1,0 +1,44 @@
+﻿html, body{
+    padding:0;
+    margin:0;
+}
+
+body{
+    width:100%;
+    height:auto;
+    min-height:100vh;
+}
+
+wrapper{
+    width:auto !important;
+    width:100%;
+    overflow:hidden;
+
+    margin:0 auto;
+    padding:0;
+}
+
+header, content, footer{
+    width:auto !important;
+    width:100%;
+
+    clear:both;
+    overflow:hidden;
+
+    margin:0 auto;
+}
+
+header{
+
+}
+
+.nav{
+    width:auto !important;
+    width:100%;
+    overflow:hidden;
+}
+
+.navColumn{
+
+    float:left;
+}

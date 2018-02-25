@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="course" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50212/course/course.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50212/course/course.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50212/course/course.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Drawing" />
+      <xsd:import schemaLocation="http://localhost:50212/course/course.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/courseBackGround.course" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Icourse_checkCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkCourse" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_checkCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_imgToByte_InputMessage">
+    <wsdl:part name="parameters" element="tns:imgToByte" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_imgToByte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:imgToByteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_createCourseString_InputMessage">
+    <wsdl:part name="parameters" element="tns:createCourseString" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_createCourseString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createCourseStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_createCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:createCourse" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_createCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_courseInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:courseInfo" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_courseInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:courseInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_fetchCourses_InputMessage">
+    <wsdl:part name="parameters" element="tns:fetchCourses" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_fetchCourses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fetchCoursesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_updateString_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateString" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_updateString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_update_InputMessage">
+    <wsdl:part name="parameters" element="tns:update" />
+  </wsdl:message>
+  <wsdl:message name="Icourse_update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Icourse">
+    <wsdl:operation name="checkCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/Icourse/checkCourse" message="tns:Icourse_checkCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Icourse/checkCourseResponse" message="tns:Icourse_checkCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="imgToByte">
+      <wsdl:input wsaw:Action="http://tempuri.org/Icourse/imgToByte" message="tns:Icourse_imgToByte_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Icourse/imgToByteResponse" message="tns:Icourse_imgToByte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createCourseString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Icourse/createCourseString" message="tns:Icourse_createCourseString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Icourse/createCourseStringResponse" message="tns:Icourse_createCourseString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/Icourse/createCourse" message="tns:Icourse_createCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Icourse/createCourseResponse" message="tns:Icourse_createCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="courseInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/Icourse/courseInfo" message="tns:Icourse_courseInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Icourse/courseInfoResponse" message="tns:Icourse_courseInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchCourses">
+      <wsdl:input wsaw:Action="http://tempuri.org/Icourse/fetchCourses" message="tns:Icourse_fetchCourses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Icourse/fetchCoursesResponse" message="tns:Icourse_fetchCourses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Icourse/updateString" message="tns:Icourse_updateString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Icourse/updateStringResponse" message="tns:Icourse_updateString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsaw:Action="http://tempuri.org/Icourse/update" message="tns:Icourse_update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Icourse/updateResponse" message="tns:Icourse_update_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_Icourse" type="tns:Icourse">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="checkCourse">
+      <soap:operation soapAction="http://tempuri.org/Icourse/checkCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="imgToByte">
+      <soap:operation soapAction="http://tempuri.org/Icourse/imgToByte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createCourseString">
+      <soap:operation soapAction="http://tempuri.org/Icourse/createCourseString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createCourse">
+      <soap:operation soapAction="http://tempuri.org/Icourse/createCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="courseInfo">
+      <soap:operation soapAction="http://tempuri.org/Icourse/courseInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchCourses">
+      <soap:operation soapAction="http://tempuri.org/Icourse/fetchCourses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateString">
+      <soap:operation soapAction="http://tempuri.org/Icourse/updateString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <soap:operation soapAction="http://tempuri.org/Icourse/update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="course">
+    <wsdl:port name="BasicHttpBinding_Icourse" binding="tns:BasicHttpBinding_Icourse">
+      <soap:address location="http://localhost:50212/course/course.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

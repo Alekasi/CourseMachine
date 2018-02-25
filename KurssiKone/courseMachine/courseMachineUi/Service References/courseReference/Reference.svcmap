@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f2527ae8-3924-4763-8bef-2b6c4e67671e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50212/course/course.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="course.disco" MetadataType="Disco" ID="e4a8f093-3a77-43c8-a285-6db6dc04059c" SourceId="1" SourceUrl="http://localhost:50212/course/course.svc?disco" />
+    <MetadataFile FileName="course.wsdl" MetadataType="Wsdl" ID="e31198a8-4c7f-4e52-800b-0a8b5b4b9f5d" SourceId="1" SourceUrl="http://localhost:50212/course/course.svc?wsdl" />
+    <MetadataFile FileName="course.xsd" MetadataType="Schema" ID="0a0278c5-fbc3-4514-a94f-e1d569e63acb" SourceId="1" SourceUrl="http://localhost:50212/course/course.svc?xsd=xsd1" />
+    <MetadataFile FileName="course1.xsd" MetadataType="Schema" ID="1743f6f3-a778-4daf-ad7f-c70a2aa1142f" SourceId="1" SourceUrl="http://localhost:50212/course/course.svc?xsd=xsd0" />
+    <MetadataFile FileName="course2.xsd" MetadataType="Schema" ID="4ed6605e-1cea-4b5c-a645-fcbe88e06e15" SourceId="1" SourceUrl="http://localhost:50212/course/course.svc?xsd=xsd3" />
+    <MetadataFile FileName="course3.xsd" MetadataType="Schema" ID="0ebe3a12-5578-436c-9dcd-263d71f48a4b" SourceId="1" SourceUrl="http://localhost:50212/course/course.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

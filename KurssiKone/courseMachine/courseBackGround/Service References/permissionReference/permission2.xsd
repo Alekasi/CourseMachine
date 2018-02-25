@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/courseBackGround.permission" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/courseBackGround.permission" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50212/permission/permission.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="permissionClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="courseId" type="ser:guid" />
+      <xs:element minOccurs="0" name="created" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="permission" nillable="true" type="tns:ArrayOfpermissionType" />
+      <xs:element minOccurs="0" name="permissionId" type="ser:guid" />
+      <xs:element minOccurs="0" name="userId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="permissionClass" nillable="true" type="tns:permissionClass" />
+  <xs:complexType name="ArrayOfpermissionType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="permissionType" nillable="true" type="tns:permissionType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpermissionType" nillable="true" type="tns:ArrayOfpermissionType" />
+  <xs:complexType name="permissionType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="commonId" type="ser:guid" />
+      <xs:element minOccurs="0" name="created" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="creator" type="ser:guid" />
+      <xs:element minOccurs="0" name="modify" type="xs:boolean" />
+      <xs:element minOccurs="0" name="read" type="xs:boolean" />
+      <xs:element minOccurs="0" name="suggestModify" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="permissionType" nillable="true" type="tns:permissionType" />
+</xs:schema>

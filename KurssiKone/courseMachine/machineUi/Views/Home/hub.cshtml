@@ -1,0 +1,31 @@
+﻿
+<div class="hubContainer" ng-controller="hubController">
+    <div class="hubFilter">
+        <p style="text-align:center;">Here goes the filtering</p>
+    </div>
+    <div class="hubContent">
+        <p ng-show="courseName.length >= 5 ? true : false;" style="color:{{msgColor}};">{{message}}</p>
+        <input type="text" ng-model="courseName" ng-change="checkCourseExists()" />
+        <input type="button" ng-click="createCourse()" value="Create"/>
+    </div>
+    <div class="hubContent">
+        <!--    CourseBox Starts    -->
+        <div class="hubBox" ng-repeat="box in courses">
+            <div class="hubHeader">
+                <h2>{{box.name}}</h2>
+            </div>
+            <div class="hubImage">
+                <img src="{{box.img}}" alt="{{box.img}}" />
+            </div>
+            <div class="hubInfo">
+                <p>{{box.information}}</p>
+            </div>
+            <div class="hubBoxButtons">
+                <input class="details" type="button" value="Details" ng-click="displayDetails(box.courseId)" />
+                <input class="buy" type="button" value="{{box.price + box.currency}}" ng-click="courseBuy(box.courseId)" />
+            </div>
+        </div>
+        <!--    CourseBox Ends  -->
+    </div>
+</div>
+

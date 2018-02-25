@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c69c8d40-3c9b-4174-90e5-d0f71abb6c13" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://coursecloudmachine.azurewebsites.net/parameter/parameter.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="parameter.xsd" MetadataType="Schema" ID="70376738-d980-4df8-a41f-4ee7eeff9da9" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/parameter/parameter.svc?xsd=xsd2" />
+    <MetadataFile FileName="parameter.wsdl" MetadataType="Wsdl" ID="5aa2ccf1-7c08-49e7-81e5-468eb9b388a7" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/parameter/parameter.svc?wsdl" />
+    <MetadataFile FileName="parameter1.xsd" MetadataType="Schema" ID="4ad7be32-43a2-4096-8485-19a163b75f58" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/parameter/parameter.svc?xsd=xsd1" />
+    <MetadataFile FileName="parameter2.xsd" MetadataType="Schema" ID="7c654b1d-159d-42b5-ad12-ece32a824795" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/parameter/parameter.svc?xsd=xsd0" />
+    <MetadataFile FileName="parameter.disco" MetadataType="Disco" ID="1c04bcdc-6531-4180-9a32-505c5b4f5c11" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/parameter/parameter.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

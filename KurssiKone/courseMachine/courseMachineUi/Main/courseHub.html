@@ -1,0 +1,13 @@
+﻿
+<script src="../Scripts/controllers/hubController.js"></script>
+
+<div ng-controller="hubController">
+    <div class="courseContainer" ng-repeat="course in courses">
+        <div class="courseBox">
+            <h2>{{course.name}}</h2>
+            <img src="course.img" alt="image" />
+            <p>{{course.information}}</p>
+            <input type="button" ng-click="displayDetails(course.courseId)" value="Go" />
+        </div>
+    </div>
+</div>

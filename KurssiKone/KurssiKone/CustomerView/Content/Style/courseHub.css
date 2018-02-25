@@ -1,0 +1,34 @@
+﻿.courseHub{
+    max-width:1024px;
+    width:100% !important;
+    width:auto;
+    height:auto;
+}
+
+.hubContainer{
+    max-width:1024px;
+    width:100% !important;
+    width:auto;
+    height:auto;
+    overflow:hidden;
+
+}
+
+.hubContent{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hubBox{
+    flex-grow:1;
+    flex-shrink:1;
+    margin:0;
+    padding:0;
+    box-shadow:5px 6px 4px #222222;
+}
+
+.hubBox div{
+
+}

@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/_LayoutPage.cshtml";
+    @ViewBag.Title = "CourseHub";
+}
+
+<content class="courseHub" ng-controller="courseHubController">
+    <div class="hubFilter">
+        <div class="hubFilterBox">
+            <input type="text" ng-model=""/>
+            <input type="button" value="Refresh" />
+        </div>
+    </div>
+
+    <div class="hubPagination">
+        <!--    1st     -->
+        <input type="button" ng-click="page.goto = 0; setPage()" />
+
+        <input type="button" ng-click="page.goto = page.current < 2 ? 0 : page.current - 2" />
+        <input type="button" ng-click="page.goto = page.current < 2 ? 1 : page.current - 1" />
+        <input type="button" ng-click="page.goto = page.current < 2 ? 2 : page.current" />
+
+        <!--    Last    -->-->
+        <input type="button" ng-click="page.goto = page.total; setPage()" />
+    </div>
+
+    <div class="hubContainer">
+        <div class="hubBox" ng-repeat="hub in courses">
+            <h2>{{hub.courseName}}</h2>
+            <img src="{{img.path}}" alt="{{img.name}}"/>
+            <div class="hubBoxInfo">
+                {{information.partial}}
+            </div>
+            <div class="hubBoxFooter">
+                <input type="button" class="hubInfo" ng-click="hubInfo(hub.courseId)" value="Info"/>
+                <input type="button" class="hubJoin" ng-click="hubJoin(hub.courseId)" value="{{hub.price.amount + hub.price.currency}}"/>
+            </div>
+        </div>
+    </div>
+</content>
+

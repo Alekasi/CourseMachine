@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4e3eb6a3-cc5b-4f75-9e38-9aadac6ec600" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50212/permission/permission.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="permission.xsd" MetadataType="Schema" ID="ed51f1d1-2519-4fef-ab03-818c3c2360c8" SourceId="1" SourceUrl="http://localhost:50212/permission/permission.svc?xsd=xsd1" />
+    <MetadataFile FileName="permission1.xsd" MetadataType="Schema" ID="c9f2ef97-b2e1-4f88-ad3f-696ae246219d" SourceId="1" SourceUrl="http://localhost:50212/permission/permission.svc?xsd=xsd0" />
+    <MetadataFile FileName="permission2.xsd" MetadataType="Schema" ID="6b72f533-0343-436c-a72d-15cd3f9525d5" SourceId="1" SourceUrl="http://localhost:50212/permission/permission.svc?xsd=xsd2" />
+    <MetadataFile FileName="permission.wsdl" MetadataType="Wsdl" ID="7f88a7e8-de87-473b-ac5d-ebffa132dae7" SourceId="1" SourceUrl="http://localhost:50212/permission/permission.svc?wsdl" />
+    <MetadataFile FileName="permission.disco" MetadataType="Disco" ID="a3ad0aba-6f7b-4fec-8e3a-b527c94f001a" SourceId="1" SourceUrl="http://localhost:50212/permission/permission.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="courseBackGround.permission.permission" CodeBehind="permission.svc.cs" %>

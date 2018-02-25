@@ -1,0 +1,69 @@
+﻿.hubContainer{
+
+}
+
+/*  Filter Part */
+.hubFilter{
+
+}
+
+
+.hubContent{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:baseline;
+}
+
+/*  CourseBoxes */
+
+.hubBox{
+    max-width:220px;
+    width:auto;
+    flex-grow:1;
+
+    padding:8px 6px;
+    margin:6px;
+
+    border: 1.5px solid grey;
+    text-align:center;
+}
+
+.hubBox:hover{
+
+}
+
+.hubBox input{
+    border:0;
+    border-radius:3px;
+    padding:6px 12px;
+    margin:6px;
+    min-width:40%;
+}
+
+.hubBox .buy{
+    background-color:#37d800;
+}
+
+.hubHeader{
+
+}
+
+.hubImage{
+    width:200px;
+    height:160px;
+}
+
+.hubImage img{
+
+}
+
+.hubInfo{
+
+}
+
+.hubBoxButtons{
+
+}
+

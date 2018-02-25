@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="parameter" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50212/parameter/parameter.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50212/parameter/parameter.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50212/parameter/parameter.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/courseBackGround.parameter" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Iparameter_readString_InputMessage">
+    <wsdl:part name="parameters" element="tns:readString" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_readString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:readStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_read_InputMessage">
+    <wsdl:part name="parameters" element="tns:read" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_read_OutputMessage">
+    <wsdl:part name="parameters" element="tns:readResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_createString_InputMessage">
+    <wsdl:part name="parameters" element="tns:createString" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_createString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_create_InputMessage">
+    <wsdl:part name="parameters" element="tns:create" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_create_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_updateString_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateString" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_updateString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_update_InputMessage">
+    <wsdl:part name="parameters" element="tns:update" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_deleteString_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteString" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_deleteString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:delete" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_deleteAllString_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteAllString" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_deleteAllString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteAllStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_deleteAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteAll" />
+  </wsdl:message>
+  <wsdl:message name="Iparameter_deleteAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteAllResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Iparameter">
+    <wsdl:operation name="readString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparameter/readString" message="tns:Iparameter_readString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparameter/readStringResponse" message="tns:Iparameter_readString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="read">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparameter/read" message="tns:Iparameter_read_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparameter/readResponse" message="tns:Iparameter_read_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparameter/createString" message="tns:Iparameter_createString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparameter/createStringResponse" message="tns:Iparameter_createString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparameter/create" message="tns:Iparameter_create_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparameter/createResponse" message="tns:Iparameter_create_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparameter/updateString" message="tns:Iparameter_updateString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparameter/updateStringResponse" message="tns:Iparameter_updateString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparameter/update" message="tns:Iparameter_update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparameter/updateResponse" message="tns:Iparameter_update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparameter/deleteString" message="tns:Iparameter_deleteString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparameter/deleteStringResponse" message="tns:Iparameter_deleteString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparameter/delete" message="tns:Iparameter_delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparameter/deleteResponse" message="tns:Iparameter_delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteAllString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparameter/deleteAllString" message="tns:Iparameter_deleteAllString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparameter/deleteAllStringResponse" message="tns:Iparameter_deleteAllString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparameter/deleteAll" message="tns:Iparameter_deleteAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparameter/deleteAllResponse" message="tns:Iparameter_deleteAll_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_Iparameter" type="tns:Iparameter">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="readString">
+      <soap:operation soapAction="http://tempuri.org/Iparameter/readString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="read">
+      <soap:operation soapAction="http://tempuri.org/Iparameter/read" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createString">
+      <soap:operation soapAction="http://tempuri.org/Iparameter/createString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <soap:operation soapAction="http://tempuri.org/Iparameter/create" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateString">
+      <soap:operation soapAction="http://tempuri.org/Iparameter/updateString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <soap:operation soapAction="http://tempuri.org/Iparameter/update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteString">
+      <soap:operation soapAction="http://tempuri.org/Iparameter/deleteString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="http://tempuri.org/Iparameter/delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAllString">
+      <soap:operation soapAction="http://tempuri.org/Iparameter/deleteAllString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAll">
+      <soap:operation soapAction="http://tempuri.org/Iparameter/deleteAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="parameter">
+    <wsdl:port name="BasicHttpBinding_Iparameter" binding="tns:BasicHttpBinding_Iparameter">
+      <soap:address location="http://localhost:50212/parameter/parameter.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

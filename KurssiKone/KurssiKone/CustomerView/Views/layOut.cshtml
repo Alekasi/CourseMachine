@@ -1,0 +1,49 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/angular")
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <wrapper>
+        <!--    Header Part Starts -->
+        <header>
+            <div class="nav">
+                <!--    Columns have navs content  -->
+                <!--    Logo    -->
+                <div class="navColumn">
+                    <img src="" alt="logo" />
+                </div>
+                <!--    NavBar  -->
+                <div class="navColumn">
+                    <a href=""><span class="navCell">FrontPage</span></a>
+                    <a href=""><span class="navCell">CourseHub</span></a>
+                    <a href=""><span class="navCell">Forums</span></a>
+                    <a href=""><span class="navCell">Help</span></a>
+                </div>
+                <!--    Place for login stuff and user  -->
+                <div class="navColumn">
+
+                </div>
+            </div>
+        </header>
+        <!--    Header Part Ends/Content Part Starts    -->
+        <content>
+            @Context
+        </content>
+        <!--    Content Part Ends/Footer part Starts    -->
+        <footer></footer>
+        <!--    Footer Part Ends    -->
+    </wrapper>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d2b6d660-fcce-488b-9610-e3ce92055160" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50212/parent/parent.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="parent.wsdl" MetadataType="Wsdl" ID="fd1245cc-cc2a-4a44-b15b-cbc824660799" SourceId="1" SourceUrl="http://localhost:50212/parent/parent.svc?wsdl" />
+    <MetadataFile FileName="parent.xsd" MetadataType="Schema" ID="c86e1411-63c9-413b-8529-8bb8d4e430ab" SourceId="1" SourceUrl="http://localhost:50212/parent/parent.svc?xsd=xsd4" />
+    <MetadataFile FileName="parent1.xsd" MetadataType="Schema" ID="59f30d12-627e-4d6e-899e-ab9127b11dbe" SourceId="1" SourceUrl="http://localhost:50212/parent/parent.svc?xsd=xsd0" />
+    <MetadataFile FileName="parent2.xsd" MetadataType="Schema" ID="0e1c3942-a4fc-49a6-9116-e70bd33ca3ee" SourceId="1" SourceUrl="http://localhost:50212/parent/parent.svc?xsd=xsd1" />
+    <MetadataFile FileName="parent3.xsd" MetadataType="Schema" ID="ce9c10a5-9612-4520-897a-0f2b7419696d" SourceId="1" SourceUrl="http://localhost:50212/parent/parent.svc?xsd=xsd2" />
+    <MetadataFile FileName="parent4.xsd" MetadataType="Schema" ID="5a57f7d8-a76b-4a1b-a223-20eb00d70ca2" SourceId="1" SourceUrl="http://localhost:50212/parent/parent.svc?xsd=xsd3" />
+    <MetadataFile FileName="parent.disco" MetadataType="Disco" ID="05dcabbe-c5ee-449d-a948-0d570c6e387d" SourceId="1" SourceUrl="http://localhost:50212/parent/parent.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="43f60f13-d736-4d03-81cd-1394041c25a6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://coursecloudmachine.azurewebsites.net/user/user.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="user.xsd" MetadataType="Schema" ID="5f7be76b-1aed-423b-bbeb-ef21bef782dd" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/user/user.svc?xsd=xsd1" />
+    <MetadataFile FileName="user.disco" MetadataType="Disco" ID="916903ff-04e9-4682-a70f-03bf5b9824dc" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/user/user.svc?disco" />
+    <MetadataFile FileName="user1.xsd" MetadataType="Schema" ID="07edffa9-288b-476b-bcba-df0b2590294e" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/user/user.svc?xsd=xsd0" />
+    <MetadataFile FileName="user.wsdl" MetadataType="Wsdl" ID="27682716-8bb9-4b38-8a01-90a842922e4b" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/user/user.svc?wsdl" />
+    <MetadataFile FileName="user2.xsd" MetadataType="Schema" ID="41eb104f-5a3a-4d77-984c-bdec255196e5" SourceId="1" SourceUrl="http://coursecloudmachine.azurewebsites.net/user/user.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

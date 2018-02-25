@@ -1,0 +1,31 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="config.Master.cs" Inherits="courseMachineUi.config" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title runat="server" id="title"></title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/angular") %>
+    </asp:PlaceHolder>
+</head>
+<body>
+    <form id="" runat="server">
+        <div id="sideBar">
+            <div id="courseInfo">
+
+            </div>
+            <div id="courseTree">
+                <div></div>
+                <div id="parentButton">
+                    <input type="text" runat="server" id="parentName" name="parentName" placeholder="ParentName"/>
+                    <input type="button" runat="server" onclick="createParent()" value="Create" id="nappi" />
+                </div>
+            </div>
+        </div>
+        <div id="courseView">
+
+        </div>
+    </form>
+</body>
+</html>

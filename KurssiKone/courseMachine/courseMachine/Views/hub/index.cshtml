@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/index.cshtml";
+}
+
+<div class="hubContainer" ng-controller="hubController">
+    <div class="hubFilter">
+
+    </div>
+    <div class="hubContent">
+        <!--    CourseBox Starts    -->
+        <div class="hubBox" ng-repeat="box in hub">
+            <div class="hubHeader">
+                <h2>{{box.name}}</h2>
+            </div>
+            <div class="hubImage">
+                <img src="{{box.img.path}}" alt="{{box.img.name}}" />
+            </div>
+            <div class="hubInfo">
+                <p>{{box.information}}</p>
+            </div>
+            <div class="hubBoxButtons">
+                <input class="details" type="button" value="Details" ng-click="displayDetails(box.courseId)" />
+                <input class="buy" type="button" value="{{box.price.amount box.price.currency}}" ng-click="courseBuy(box.courseId)" />
+            </div>
+        </div>
+        <!--    CourseBox Ends  -->
+    </div>
+</div>
+

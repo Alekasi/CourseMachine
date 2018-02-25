@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/courseBackGround.parameter" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/courseBackGround.parameter" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50212/child/child.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfparameterClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="parameterClass" nillable="true" type="tns:parameterClass" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfparameterClass" nillable="true" type="tns:ArrayOfparameterClass" />
+  <xs:complexType name="parameterClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="childId" type="ser:guid" />
+      <xs:element minOccurs="0" name="creator" type="ser:guid" />
+      <xs:element minOccurs="0" name="order" type="xs:int" />
+      <xs:element minOccurs="0" name="parameterId" type="ser:guid" />
+      <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="parameterClass" nillable="true" type="tns:parameterClass" />
+</xs:schema>

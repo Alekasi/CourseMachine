@@ -1,0 +1,74 @@
+﻿@{
+    Layout = "~/Views/index.cshtml";
+}
+
+<wrapper>
+    <div class="sideBar">
+        <!-- Machines info -->
+        <div class="infoBox">
+            <div class="infoHead" ng-click="open = open == true ? false : true;"></div>
+            <div class="infoBody" ng-show="open">
+                <h2>{{course.name}}</h2>
+                <div class="configBox">
+                    <div class="configInput">
+                        <textarea class="configTextArea" placeholder="Here lies the hopes and dreems of creator">
+                            {{course.information}}
+                        </textarea>
+                    </div>
+                    <div class="configButtons">
+                        <input type="button" ng-click="saceConfig()" value="Save" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Machines Tree -->
+        <div class="treeBox" ng-controller="treeController">
+            <div class="treeTable" ng-repeat="course in response">
+                <!-- Trees colored header -->
+                <div class="treeHead">
+                    <div class="treeCell">{{course.order}}</div>
+                    <div class="treeCell">{{course.name}}</div>
+                    <div class="treeCell">{{course.status}}</div>
+                    <div class="treeCell">Rotor</div>
+                </div>
+                <!-- Trees uncolored children -->
+                <!-- Create a way to label the whole thing -->
+                <div class="treeRow" ng-repeat="child in course.child">
+                    <div class="treeCell">{{child.order}}</div>
+                    <div class="treeCell">{{child.name}}</div>
+                    <div class="treeCell">{{child.status}}</div>
+                    <div class="treeCell">{{child.progress}}</div>
+                </div>
+            </div>
+        </div>
+        <!-- Machines Footer -->
+        <div class="footerBox">
+            <p>this is experimental footer</p>
+        </div>
+    </div>
+    <div class="content" ng-controller="viewController">
+        <!-- Place parameterBar either top or side -->
+        <ng-switch>
+            <div class="topBar" ng-switch-when="screenWidth <= 700"></div>
+            <div class="viewBox">
+                <!-- calling the parameters -->
+                <div class="parameterBox" ng-repeat="parameter in parameter">
+                    <div class="artificial" ng-switch="parameter.type">
+                        <textarea ng-switch-when="textarea">{{parameter.value}}</textarea>
+                        <h2 ng-switch-when="header"><input type="text" value="{{parameter.value}}" /></h2>
+                        <img ng-switch-when="img" src="{{parameter.value}}" alt="{{parameter.value}}"/>
+                        <video ng-switch-when="video">
+                            <source src="{{parameter.value}}" type="audio/mp4"/>
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="" ng-switch-when="screenWidth > 700">
+                <div class="flexSideBar" ng-repeat="type in parameters">
+                    <img src="{{type.img}}" alt="{{type.display}}" ng-click="addParameter(type.type)"/>
+                </div>
+            </div>
+        </ng-switch>    
+    </div>              
+</wrapper>

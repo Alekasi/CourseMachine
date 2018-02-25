@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/courseBackGround.course" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/courseBackGround.course" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://coursecloudmachine.azurewebsites.net/course/course.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="create">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="user" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="create" nillable="true" type="tns:create" />
+  <xs:complexType name="courseClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="company" type="ser:guid" />
+      <xs:element minOccurs="0" name="courseId" type="ser:guid" />
+      <xs:element minOccurs="0" name="created" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="creator" type="ser:guid" />
+      <xs:element minOccurs="0" name="currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="duration" type="xs:int" />
+      <xs:element minOccurs="0" name="durationUnit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="img" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="information" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="price" type="xs:int" />
+      <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="courseClass" nillable="true" type="tns:courseClass" />
+  <xs:complexType name="ArrayOfcourseClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="courseClass" nillable="true" type="tns:courseClass" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfcourseClass" nillable="true" type="tns:ArrayOfcourseClass" />
+  <xs:complexType name="courseUpdate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="duration" type="xs:int" />
+      <xs:element minOccurs="0" name="durationUnit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="information" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="price" type="xs:int" />
+      <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="courseUpdate" nillable="true" type="tns:courseUpdate" />
+  <xs:complexType name="courseDelete">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="courseId" type="ser:guid" />
+      <xs:element minOccurs="0" name="user" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="courseDelete" nillable="true" type="tns:courseDelete" />
+</xs:schema>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/courseBackGround.child" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/courseBackGround.child" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50212/child/child.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:50212/child/child.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/courseBackGround.parameter" />
+  <xs:complexType name="ArrayOfchildClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="childClass" nillable="true" type="tns:childClass" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfchildClass" nillable="true" type="tns:ArrayOfchildClass" />
+  <xs:complexType name="childClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="childId" type="ser:guid" />
+      <xs:element minOccurs="0" name="creator" type="ser:guid" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/courseBackGround.parameter" minOccurs="0" name="parameter" nillable="true" type="q1:ArrayOfparameterClass" />
+      <xs:element minOccurs="0" name="parentId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="childClass" nillable="true" type="tns:childClass" />
+  <xs:complexType name="childCreate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="parentId" type="ser:guid" />
+      <xs:element minOccurs="0" name="userId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="childCreate" nillable="true" type="tns:childCreate" />
+  <xs:complexType name="childUpdater">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="childId" type="ser:guid" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="parentId" type="ser:guid" />
+      <xs:element minOccurs="0" name="userId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="childUpdater" nillable="true" type="tns:childUpdater" />
+  <xs:complexType name="childDelete">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="childId" type="ser:guid" />
+      <xs:element minOccurs="0" name="user" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="childDelete" nillable="true" type="tns:childDelete" />
+  <xs:complexType name="childDeleteAll">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="parentId" type="ser:guid" />
+      <xs:element minOccurs="0" name="user" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="childDeleteAll" nillable="true" type="tns:childDeleteAll" />
+  <xs:complexType name="childOptions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="childId" type="ser:guid" />
+      <xs:element minOccurs="0" name="releaseDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="releaseDates" type="xs:int" />
+      <xs:element minOccurs="0" name="user" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="childOptions" nillable="true" type="tns:childOptions" />
+</xs:schema>

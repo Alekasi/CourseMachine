@@ -1,0 +1,30 @@
+﻿.sideBar{
+    max-width:450px;
+    width:auto !important;
+    width:100%;
+    min-width:200px;
+    display:table;
+
+    background-color:#414141;
+}
+
+.sideBar div{
+    display:table-row;
+    clear:both;
+    padding:6px 3px;
+
+    border:0.5px solid grey;
+    box-shadow:4px 4px 5px #c7c7c7 2px 2px 3px #c7c7c7;
+}
+
+.infoBox{
+}
+
+.treeBox{
+}
+
+.footerBox{
+    bottom:0;
+    left:0;
+    position:absolute;
+}

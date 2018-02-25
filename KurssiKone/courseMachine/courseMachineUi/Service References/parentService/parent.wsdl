@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="parent" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50212/parent/parent.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50212/parent/parent.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50212/parent/parent.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/courseBackGround.parent" />
+      <xsd:import schemaLocation="http://localhost:50212/parent/parent.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/courseBackGround.child" />
+      <xsd:import schemaLocation="http://localhost:50212/parent/parent.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/courseBackGround.parameter" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Iparent_checkString_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkString" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_checkString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_check_InputMessage">
+    <wsdl:part name="parameters" element="tns:check" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_check_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_readString_InputMessage">
+    <wsdl:part name="parameters" element="tns:readString" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_readString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:readStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_read_InputMessage">
+    <wsdl:part name="parameters" element="tns:read" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_read_OutputMessage">
+    <wsdl:part name="parameters" element="tns:readResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_createString_InputMessage">
+    <wsdl:part name="parameters" element="tns:createString" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_createString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_create_InputMessage">
+    <wsdl:part name="parameters" element="tns:create" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_create_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_updateString_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateString" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_updateString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_update_InputMessage">
+    <wsdl:part name="parameters" element="tns:update" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_deleteString_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteString" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_deleteString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:delete" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_deleteAllString_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteAllString" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_deleteAllString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteAllStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_deleteAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteAll" />
+  </wsdl:message>
+  <wsdl:message name="Iparent_deleteAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteAllResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Iparent">
+    <wsdl:operation name="checkString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparent/checkString" message="tns:Iparent_checkString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparent/checkStringResponse" message="tns:Iparent_checkString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="check">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparent/check" message="tns:Iparent_check_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparent/checkResponse" message="tns:Iparent_check_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="readString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparent/readString" message="tns:Iparent_readString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparent/readStringResponse" message="tns:Iparent_readString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="read">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparent/read" message="tns:Iparent_read_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparent/readResponse" message="tns:Iparent_read_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparent/createString" message="tns:Iparent_createString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparent/createStringResponse" message="tns:Iparent_createString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparent/create" message="tns:Iparent_create_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparent/createResponse" message="tns:Iparent_create_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparent/updateString" message="tns:Iparent_updateString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparent/updateStringResponse" message="tns:Iparent_updateString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparent/update" message="tns:Iparent_update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparent/updateResponse" message="tns:Iparent_update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparent/deleteString" message="tns:Iparent_deleteString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparent/deleteStringResponse" message="tns:Iparent_deleteString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparent/delete" message="tns:Iparent_delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparent/deleteResponse" message="tns:Iparent_delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteAllString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparent/deleteAllString" message="tns:Iparent_deleteAllString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparent/deleteAllStringResponse" message="tns:Iparent_deleteAllString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/Iparent/deleteAll" message="tns:Iparent_deleteAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Iparent/deleteAllResponse" message="tns:Iparent_deleteAll_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_Iparent" type="tns:Iparent">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="checkString">
+      <soap:operation soapAction="http://tempuri.org/Iparent/checkString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="check">
+      <soap:operation soapAction="http://tempuri.org/Iparent/check" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="readString">
+      <soap:operation soapAction="http://tempuri.org/Iparent/readString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="read">
+      <soap:operation soapAction="http://tempuri.org/Iparent/read" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createString">
+      <soap:operation soapAction="http://tempuri.org/Iparent/createString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <soap:operation soapAction="http://tempuri.org/Iparent/create" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateString">
+      <soap:operation soapAction="http://tempuri.org/Iparent/updateString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <soap:operation soapAction="http://tempuri.org/Iparent/update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteString">
+      <soap:operation soapAction="http://tempuri.org/Iparent/deleteString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="http://tempuri.org/Iparent/delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAllString">
+      <soap:operation soapAction="http://tempuri.org/Iparent/deleteAllString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAll">
+      <soap:operation soapAction="http://tempuri.org/Iparent/deleteAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="parent">
+    <wsdl:port name="BasicHttpBinding_Iparent" binding="tns:BasicHttpBinding_Iparent">
+      <soap:address location="http://localhost:50212/parent/parent.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

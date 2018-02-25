@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="child" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50212/child/child.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50212/child/child.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50212/child/child.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/courseBackGround.child" />
+      <xsd:import schemaLocation="http://localhost:50212/child/child.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/courseBackGround.parameter" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Ichild_readString_InputMessage">
+    <wsdl:part name="parameters" element="tns:readString" />
+  </wsdl:message>
+  <wsdl:message name="Ichild_readString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:readStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ichild_read_InputMessage">
+    <wsdl:part name="parameters" element="tns:read" />
+  </wsdl:message>
+  <wsdl:message name="Ichild_read_OutputMessage">
+    <wsdl:part name="parameters" element="tns:readResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ichild_createString_InputMessage">
+    <wsdl:part name="parameters" element="tns:createString" />
+  </wsdl:message>
+  <wsdl:message name="Ichild_createString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ichild_create_InputMessage">
+    <wsdl:part name="parameters" element="tns:create" />
+  </wsdl:message>
+  <wsdl:message name="Ichild_create_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ichild_updateString_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateString" />
+  </wsdl:message>
+  <wsdl:message name="Ichild_updateString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ichild_update_InputMessage">
+    <wsdl:part name="parameters" element="tns:update" />
+  </wsdl:message>
+  <wsdl:message name="Ichild_update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Ichild">
+    <wsdl:operation name="readString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ichild/readString" message="tns:Ichild_readString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ichild/readStringResponse" message="tns:Ichild_readString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="read">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ichild/read" message="tns:Ichild_read_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ichild/readResponse" message="tns:Ichild_read_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ichild/createString" message="tns:Ichild_createString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ichild/createStringResponse" message="tns:Ichild_createString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ichild/create" message="tns:Ichild_create_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ichild/createResponse" message="tns:Ichild_create_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ichild/updateString" message="tns:Ichild_updateString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ichild/updateStringResponse" message="tns:Ichild_updateString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input wsaw:Action="http://tempuri.org/Ichild/update" message="tns:Ichild_update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Ichild/updateResponse" message="tns:Ichild_update_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_Ichild" type="tns:Ichild">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="readString">
+      <soap:operation soapAction="http://tempuri.org/Ichild/readString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="read">
+      <soap:operation soapAction="http://tempuri.org/Ichild/read" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createString">
+      <soap:operation soapAction="http://tempuri.org/Ichild/createString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <soap:operation soapAction="http://tempuri.org/Ichild/create" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateString">
+      <soap:operation soapAction="http://tempuri.org/Ichild/updateString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <soap:operation soapAction="http://tempuri.org/Ichild/update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="child">
+    <wsdl:port name="BasicHttpBinding_Ichild" binding="tns:BasicHttpBinding_Ichild">
+      <soap:address location="http://localhost:50212/child/child.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
